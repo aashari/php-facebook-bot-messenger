@@ -7,6 +7,15 @@ This is a very simple PHP class for Facebook Messenger Bot, you can send and rec
 Documentation
 -------------
 
+#### constructor
+The constuctor have 2 required parameter and 1 optional parameter, which is:
+Parameter     | Description
+-------- | ---
+$access_token | Your page access token
+$verify_token     | Your private verify token
+[$request] | request method by default will be filled with **_REQUEST** global parameter
+
+
 #### listen
 
 This method will listen request from Messenger Webhook, this is will return null or array.
